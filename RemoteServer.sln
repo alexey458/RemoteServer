@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteServer", "RemoteServer\RemoteServer.vcxproj", "{267A2A2E-4D02-43DC-96CF-FA604F502017}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F8FC1155-AED9-4C6D-8F22-E71BD794B160} = {F8FC1155-AED9-4C6D-8F22-E71BD794B160}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteServerLib", "RemoteServerLib\RemoteServerLib.vcxproj", "{F8FC1155-AED9-4C6D-8F22-E71BD794B160}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RemoteClient", "RemoteClient\RemoteClient.vcxproj", "{36A80A8E-32E3-43B1-9A52-0CD9129659AE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F8FC1155-AED9-4C6D-8F22-E71BD794B160} = {F8FC1155-AED9-4C6D-8F22-E71BD794B160}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267A2A2E-4D02-43DC-96CF-FA604F502017}.Debug|Win32.ActiveCfg = Debug|Win32
+		{267A2A2E-4D02-43DC-96CF-FA604F502017}.Debug|Win32.Build.0 = Debug|Win32
+		{267A2A2E-4D02-43DC-96CF-FA604F502017}.Release|Win32.ActiveCfg = Release|Win32
+		{267A2A2E-4D02-43DC-96CF-FA604F502017}.Release|Win32.Build.0 = Release|Win32
+		{F8FC1155-AED9-4C6D-8F22-E71BD794B160}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8FC1155-AED9-4C6D-8F22-E71BD794B160}.Debug|Win32.Build.0 = Debug|Win32
+		{F8FC1155-AED9-4C6D-8F22-E71BD794B160}.Release|Win32.ActiveCfg = Release|Win32
+		{F8FC1155-AED9-4C6D-8F22-E71BD794B160}.Release|Win32.Build.0 = Release|Win32
+		{36A80A8E-32E3-43B1-9A52-0CD9129659AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{36A80A8E-32E3-43B1-9A52-0CD9129659AE}.Debug|Win32.Build.0 = Debug|Win32
+		{36A80A8E-32E3-43B1-9A52-0CD9129659AE}.Release|Win32.ActiveCfg = Release|Win32
+		{36A80A8E-32E3-43B1-9A52-0CD9129659AE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
