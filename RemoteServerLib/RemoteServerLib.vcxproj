@@ -17,6 +17,7 @@
     <ClInclude Include="IResult.h" />
     <ClInclude Include="ITransport.h" />
     <ClInclude Include="Commands.h" />
+    <ClInclude Include="Result.h" />
     <ClInclude Include="ShellExecutor.h" />
   </ItemGroup>
   <ItemGroup>

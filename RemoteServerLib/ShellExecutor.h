@@ -3,6 +3,7 @@
 
 #include "iexecutor.h"
 #include "Commands.h"
+#include "Result.h"
 
 class ShellExecutor :public IExecutor
 {

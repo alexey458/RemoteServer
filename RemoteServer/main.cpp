@@ -53,7 +53,7 @@ int main(int argc, char* argv)
 	ShellExecutor executor;
 
 	executor.ExecComm(&command, &res);
-	executor.ExecComm(&command2, &res);
+	//executor.ExecComm(&command2, &res);
 
 	return 0;
 }

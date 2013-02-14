@@ -61,6 +61,7 @@ void ShellExecutor::ExecComm(ICommand* command, IResult* result)
 
 	case COM_EXEC:
 		WinExec((LPCSTR)static_cast<ExecCommand*>(command)->getCommand(), SW_SHOW);
+		static_cast<ExecResult*>(result)->SetExitCode(0);
 		break;
 
 	case COM_DIR:
