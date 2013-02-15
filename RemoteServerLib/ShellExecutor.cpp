@@ -69,7 +69,8 @@ void ShellExecutor::ExecComm(ICommand* command, IResult* result)
 		break;
 
 	case COM_DEL:
-		static_cast<DelCommand*>(command)->getPath();
+		DeleteFile((LPCSTR)static_cast<DelCommand*>(command)->getPath());
+		static_cast<DelResult*>(result)->SetResultCode(0);
 		break;
 
 	case COM_SYS_INFO:

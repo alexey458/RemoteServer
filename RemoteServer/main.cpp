@@ -44,16 +44,16 @@
 int main(int argc, char* argv)
 {
 	ExecCommand command("calc.exe");
-	DirCommand	command2("C:\\");
+	DelCommand	command2("D:\\temp.txt");
 
-	IResult res;
-
-
+	DelResult res2;
+	ExecResult res;
+	IResult res3;
 
 	ShellExecutor executor;
 
-	executor.ExecComm(&command, &res);
-	//executor.ExecComm(&command2, &res);
+	executor.ExecComm(&command, &res3);
+	//executor.ExecComm(&command2, &res3);
 
 	return 0;
 }

@@ -6,15 +6,20 @@
 class ExecResult :public IResult
 {
 public:
-	ExecResult(UCHAR exit_code)
+	explicit ExecResult(UCHAR exit_code)
 	{
 		newData(sizeof(UCHAR));
 		data[0] = exit_code;
 	}
+
 	ExecResult()
 	{
-		newData(sizeof(UCHAR));
 	}
+
+	ExecResult(const IResult & res): IResult(res)
+	{
+	}
+
 	virtual ~ExecResult(void){}
 
 	virtual void SetExitCode(UCHAR exit_code)
@@ -22,10 +27,10 @@ public:
 		if(data!=NULL)
 			data[0] = exit_code;
 	}
-
 	virtual UCHAR GetExitCode()
 	{
-		return data[0];
+		if(data!=NULL)
+			return data[0];
 	}
 };
 
@@ -40,9 +45,27 @@ public:
 class DelResult :public IResult
 {
 public:
-	DelResult(){}
+	DelResult(UCHAR exit_code)
+	{
+		newData(sizeof(UCHAR));
+		data[0] = exit_code;
+	}
+	DelResult()
+	{
+		newData(sizeof(UCHAR));
+	}
 	virtual ~DelResult(void){}
-	virtual int GetResult();
+
+	virtual void SetResultCode(UCHAR exit_code)
+	{
+		if(data!=NULL)
+			data[0] = exit_code;
+	}
+	virtual UCHAR SetResultCode()
+	{
+		if(data!=NULL)
+			return data[0];
+	}
 };
 
 #endif // RESULT_H

@@ -8,6 +8,9 @@ protected:
 	size_t resultSize;
 	UCHAR *data;
 public:
+	IResult() : data(NULL)
+	{
+	}
 	virtual ~IResult(void){
 	freeData();
 	}
@@ -21,6 +24,18 @@ public:
 	if(data!=NULL)
 		delete [] data;
 	resultSize = 0;
+	}
+
+	virtual void setData(size_t mSize, UCHAR* dest_data)
+	{
+		if(data!=NULL)
+		{
+			for(size_t i = 0; i< mSize; i++ )
+			{
+				data[i] = dest_data[i];
+			}
+			resultSize = mSize;
+		}
 	}
 };
 
