@@ -34,26 +34,26 @@
 **
 **
 **
-** $QT_END_LICENSE$
 **
 ****************************************************************************/
 
 #include <stdio.h>
-#include <shellexecutor.h>
+#include <Executor/shellexecutor.h>
 
 int main(int argc, char* argv)
 {
-	ExecCommand command("calc.exe");
-	DelCommand	command2("D:\\temp.txt");
+	PackCommand packCommand;
+	PackResult packResult;
 
-	DelResult res2;
-	ExecResult res;
-	IResult res3;
+	PackageMemInit(&packCommand);
+	ResultMemInit(&packResult);
 
-	ShellExecutor executor;
+	SetExecCommand(&packCommand, "calc");
 
-	executor.ExecComm(&command, &res3);
-	//executor.ExecComm(&command2, &res3);
+	ExecuteCommand(&packCommand, &packResult);
+
+	PackageMemFree(&packCommand);
+	ResultMemFree(&packResult);
 
 	return 0;
 }

@@ -1,15 +1,15 @@
 #ifndef IEXECUTOR_H
 #define IEXECUTOR_H
 
-#include "ICommand.h"
-#include "IResult.h"
+#include "../Protocol/ICommand.h"
+#include "../Protocol/IResult.h"
 
 class IExecutor
 {
 public:
 	IExecutor(void) {}
 	virtual ~IExecutor(void) {}
-	virtual void ExecComm(ICommand* command, IResult* result) = 0;
+	virtual void ExecComm() = 0;
 };
 
 #endif // IEXECUTOR_H

@@ -11,17 +11,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ICommand.h" />
-    <ClInclude Include="IExecutor.h" />
-    <ClInclude Include="IProtocol.h" />
-    <ClInclude Include="IResult.h" />
-    <ClInclude Include="ITransport.h" />
-    <ClInclude Include="Commands.h" />
-    <ClInclude Include="Result.h" />
-    <ClInclude Include="ShellExecutor.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ShellExecutor.cpp" />
+    <ClInclude Include="Executor\IExecutor.h" />
+    <ClInclude Include="Executor\ShellExecutor.h" />
+    <ClInclude Include="Protocol\Commands.h" />
+    <ClInclude Include="Protocol\ICommand.h" />
+    <ClInclude Include="Protocol\IResult.h" />
+    <ClInclude Include="Protocol\Result.h" />
+    <ClInclude Include="RemoteServerLib.h" />
+    <ClInclude Include="Socket\Socket.h" />
+    <ClInclude Include="Transport\ITransport.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F8FC1155-AED9-4C6D-8F22-E71BD794B160}</ProjectGuid>

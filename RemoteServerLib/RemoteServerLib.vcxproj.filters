@@ -9,36 +9,55 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Header Files\Protocol">
+      <UniqueIdentifier>{433303fe-3fc6-462b-9c35-e985de2bb1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Procol">
+      <UniqueIdentifier>{01f9e9a1-92a6-4d17-a20e-7f245babc427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transport">
+      <UniqueIdentifier>{3446f90b-f4ba-49ed-b336-fcdc2c5ad0d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Transport">
+      <UniqueIdentifier>{058c754c-785d-4f06-b6c2-12d287464df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Executor">
+      <UniqueIdentifier>{ebc6c9d2-6a6d-48a0-94e1-fa2ffd9f6ec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Executor">
+      <UniqueIdentifier>{22f19b2c-2161-4c48-a51b-f9eb55d0772a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Socket">
+      <UniqueIdentifier>{1609deb4-05d1-468d-824c-bc8a59e28730}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ICommand.h">
+    <ClInclude Include="Protocol\Commands.h">
+      <Filter>Header Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\ICommand.h">
+      <Filter>Header Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\IResult.h">
+      <Filter>Header Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\Result.h">
+      <Filter>Header Files\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Transport\ITransport.h">
+      <Filter>Header Files\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="Executor\IExecutor.h">
+      <Filter>Header Files\Executor</Filter>
+    </ClInclude>
+    <ClInclude Include="Executor\ShellExecutor.h">
+      <Filter>Header Files\Executor</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteServerLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IResult.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Socket\Socket.h">
+      <Filter>Header Files\Socket</Filter>
     </ClInclude>
-    <ClInclude Include="IProtocol.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IExecutor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ITransport.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ShellExecutor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Commands.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Result.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="ShellExecutor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
