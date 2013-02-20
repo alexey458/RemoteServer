@@ -39,21 +39,26 @@
 
 #include <stdio.h>
 #include <Executor/shellexecutor.h>
+#include <Transport/ITransport.h>
 
 int main(int argc, char* argv)
 {
-	PackCommand packCommand;
-	PackResult packResult;
+	//PackCommand packCommand;
+	//PackResult packResult;
 
-	PackageMemInit(&packCommand);
-	ResultMemInit(&packResult);
+	//PackageMemInit(&packCommand);
+	//ResultMemInit(&packResult);
 
-	SetExecCommand(&packCommand, "calc");
+	//SetExecCommand(&packCommand, "calc");
 
-	ExecuteCommand(&packCommand, &packResult);
+	//ExecuteCommand(&packCommand, &packResult);
 
-	PackageMemFree(&packCommand);
-	ResultMemFree(&packResult);
+	//PackageMemFree(&packCommand);
+	//ResultMemFree(&packResult);
+
+	TransportPacket tpacket;
+
+	WaitForConnection(&tpacket);
 
 	return 0;
 }

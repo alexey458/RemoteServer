@@ -21,6 +21,9 @@
     <ClInclude Include="Socket\Socket.h" />
     <ClInclude Include="Transport\ITransport.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RemoteServerLib.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F8FC1155-AED9-4C6D-8F22-E71BD794B160}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
